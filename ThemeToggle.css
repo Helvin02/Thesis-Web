@@ -1,0 +1,64 @@
+/* Switch Toggle Styles */
+.theme-toggle-switch {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 30px;
+    background-color: #1e293b;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .toggle-knob {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #7dd3fc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    transition: left 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dark-mode .toggle-knob {
+    left: 30px;
+  }
+  
+  .toggle-icon {
+    color: #1e293b;
+    font-size: 16px;
+  }
+  
+  .sun-icon {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  .moon-icon {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: absolute;
+  }
+  
+  .dark-mode .sun-icon {
+    opacity: 0;
+  }
+  
+  .dark-mode .moon-icon {
+    opacity: 1;
+  }
+  
+  /* Add a glow effect for the dark mode toggle */
+  .dark-mode .toggle-knob {
+    box-shadow: 0 0 10px #7dd3fc, 0 0 15px rgba(125, 211, 252, 0.5);
+  }
